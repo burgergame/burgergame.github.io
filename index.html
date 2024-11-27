@@ -7,7 +7,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>Burger Game</title>
-
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8268425270467026"
+    crossorigin="anonymous"></script>
   <style>
     html,
     body {
@@ -43,30 +44,30 @@
   </div>
   <script src="Build/BurgerGame.loader.js"></script>
   <script>
-        function resizeCanvas() {
-            const canvas = document.getElementById("unity-canvas");
-            const container = document.getElementById("unity-container");
+    function resizeCanvas() {
+      const canvas = document.getElementById("unity-canvas");
+      const container = document.getElementById("unity-container");
 
-            const containerWidth = container.clientWidth;
-            const containerHeight = container.clientHeight;
-            const aspectRatio = 1;//16 / 9;
+      const containerWidth = container.clientWidth;
+      const containerHeight = container.clientHeight;
+      const aspectRatio = 1;//16 / 9;
 
-            if (containerWidth / containerHeight > aspectRatio) {
-                canvas.style.width = containerHeight + "px";
-                canvas.style.height = containerHeight + "px";
-            } else {
-                canvas.style.height = containerWidth + "px";
-                canvas.style.width = containerWidth + "px";
-            }
-        }
+      if (containerWidth / containerHeight > aspectRatio) {
+        canvas.style.width = containerHeight + "px";
+        canvas.style.height = containerHeight + "px";
+      } else {
+        canvas.style.height = containerWidth + "px";
+        canvas.style.width = containerWidth + "px";
+      }
+    }
 
-        window.addEventListener("resize", resizeCanvas);
-        window.addEventListener("load", resizeCanvas);
-
-
+    window.addEventListener("resize", resizeCanvas);
+    window.addEventListener("load", resizeCanvas);
 
 
-//////////////////////////////////////////////////////////////////
+
+
+    //////////////////////////////////////////////////////////////////
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // Mobile device style: fill the whole browser client area with the game canvas:
       var meta = document.createElement('meta');
